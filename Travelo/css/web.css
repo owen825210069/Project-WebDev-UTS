@@ -1,0 +1,1674 @@
+* {padding: 0; margin: 0}
+
+body {
+    width: 100%;
+}
+
+header {
+    background: #eec9cf;
+    height: 90px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 10px #000000; 
+}
+
+header .logoKiri img {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    width: 150px;
+    height: auto;
+    padding: 0px;
+    float: left;
+}
+
+
+nav {
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: all 0.4s ease;
+}
+
+nav ul li:hover ul {
+    opacity: 1;
+    z-index: 1;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: red;
+    padding-right: 10px;
+    margin-top: 20px;
+    list-style: none;
+    float: left;
+    line-height: 45px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding: 20px;
+}
+
+nav ul li ul {
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #eec9cf;
+    padding-top: 20px;
+}
+
+nav ul li ul li {
+    float: none;
+    position: relative;
+    width: 202px;
+    height: 45px;
+    margin: 0px;
+}
+
+.kananAtas {
+    float: right;
+    width: 620px;
+    height: 90px;
+}
+
+header .noTelp {
+    margin-left: 125px;
+    padding: 0px;
+    float: left;
+}
+
+.noTelp a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.noTelp img {
+    width: 15px;
+    height: auto;
+}
+
+.noTelp a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 15px;
+    border-right: 1px solid gray;
+}
+
+.noTelp img, a {
+    margin-top: 35px;
+}
+
+
+.Medsos img {
+    width: 20px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+    transition: all 0.5s ease;
+}
+
+.Medsos  img:hover {
+    filter: invert(13%) sepia(79%) saturate(7374%) hue-rotate(8deg) brightness(105%) contrast(120%);
+    transition: all 0.5s ease;
+    width: 25px;
+}
+
+
+.searchBut {
+    background: #FF4A52;
+    float: right;
+    height: 90px;
+    width: 100px;
+}
+
+.searchBut img {
+    width: 20px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.searchBut:hover img {
+    width: 30px;
+    margin-top: 30px;
+    margin-left: 35px;
+    filter: invert(88%) sepia(100%) saturate(1%) hue-rotate(58deg) brightness(104%) contrast(101%);
+}
+
+
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+article section iframe {
+    margin-top: 90px;
+    width: 100%; 
+    height: 659px; 
+    margin-bottom: -7px;
+}
+
+article {
+    position: absolute;
+    width: 100%;
+    height: 667px;
+    float: left;
+}
+
+article .homeAtas {
+    margin-bottom: -5px;
+}
+
+.homeAtas img {
+    width: 100%;
+    height: 667px;
+    object-fit: cover;
+    filter: brightness(70%);
+    margin-top: 90px;
+}
+
+.homeAtas .textFotonya {
+    position: absolute;
+    color: whitesmoke;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homeAtas .textFotonya h1 {
+    font-size: 100px;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 600;
+}
+
+.homeAtas .textFotonya h2 {
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.homeAtas .tombolExplore {
+    position: absolute;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    background: #1ec6b6;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.homeAtas .tombolExplore a {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.homeAtas .tombolExplore:hover {
+    background: #FF4A52;
+}
+
+.homeAtas .buttons .previous {
+    height: 120px;
+    width: 50px;
+    color: white;
+    line-height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    transition: all 0.2s ease;
+}
+
+.homeAtas .buttons .previous:hover {
+    background: white;
+    color: black;
+}
+
+.homeAtas .buttons .next {
+    right: 0;
+    height: 120px;
+    width: 50px;
+    color: white;
+    line-height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    transition: all 0.2s ease;
+}
+
+.homeAtas .buttons .next:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.form {
+    background: #040E27;
+    width: 100%;
+    height: 149px;
+    line-height: 149px;
+    float: left;
+}
+
+.labelForm {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 17%;
+}
+
+.isiForm {
+    float: left;
+    margin-left: 15px;
+}
+
+.isiForm input, select {
+    background: #040E27;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding: 14px;
+    margin-right: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.isiForm option {
+    background: #040E27;
+    color: white;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tombolSearchForm input {
+    float: left;
+    background: #FF4A52;
+    margin-left: 7px;
+    margin-top: 50px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.tombolSearchForm input:hover {
+   background: #1ec6b6;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+    margin-left: 41px;
+}
+
+
+.PopDest {
+    background: #f0dee1;
+    width: 100%;
+    height: 900px;
+    float: left;
+    padding-top: 100px;
+}
+
+.PopDest .judul {
+    text-align: center;
+    width: 550px;
+    transform: translate(88%, 0%);
+    margin-bottom: 30px;
+}
+
+.PopDest .marg {
+    margin-left: -25px;
+}
+
+.PopDest .judul h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    color: #040e27;
+    padding: 9px;
+}   
+
+.PopDest .judul h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7a838b;
+}
+
+.PopGallery {
+    width: 1300px;
+    margin-left: 175px;
+}
+
+.PopGallery .foto {
+    width: 362px;
+    height: 300px;
+    float: left;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.PopGallery .foto:hover img {
+    margin-top: -10px;
+    -webkit-box-shadow: 0px 1px 10px #000000;
+}
+
+.PopGallery .foto img {
+    width: 362px;
+    height: 270px;
+    padding: 0px;
+    position: relative;
+    filter: brightness(55%);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.PopGallery .foto .judul {
+    width: 230px;
+    padding: 0px;
+    margin-top: -60px;
+    margin-left: -210px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.PopGallery .foto .judul a {
+    text-decoration: none;
+    color: white;
+    background: #1ec6b6;
+    padding: 0px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.PopGallery .foto:hover .judul {
+    color: #FF4A52;
+}
+
+.PopGallery .foto:hover .judul a {
+    background: #FF4A52;
+}
+
+
+
+.Subscribe {
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+
+.Subscribe .marg {
+    margin-left: -75px;
+}
+
+.Subscribe img {
+    filter: brightness(50%) contrast(0.9);
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.SubsTulisan {
+    position: absolute;
+    float: left;
+    margin-top: -29px;
+    margin-left: 300px;
+    width: 340px;
+}
+
+.SubsTulisan h1 {
+    font-size: 24px;
+    font-weight: 550;
+    color: white;
+    font-family: "Rubik",sans-serif;
+    padding-bottom: 13px;
+}
+
+.SubsTulisan h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #aab1b7;
+    font-family: "Rubik",sans-serif;
+    line-height: 28px;
+}
+
+.buatEmail {
+    position: relative;
+    margin-top: -130px;
+    margin-left: 48%;
+    width: 700px;
+}
+
+.BoxEmail input {
+    background: white;
+    float: left;
+    width: 400px;
+    padding: 16px;
+    margin-left: -50px;
+    border: none;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.TombolSubscribe input {
+    float: left;
+    background: #FF4A52;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 120px;
+    height: 52px;
+    margin-top: -1px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.TombolSubscribe input:hover {
+    background: #1ec6b6;
+}
+
+
+
+.PopPlaces {
+    background: #f0dee1;
+    width: 100%;
+    height: 1100px;
+    float: left;
+    padding-top: 100px;
+}
+
+.PopPlaces .marg {
+    margin-left: -25px;
+}
+
+.MorePlacesButton .marg2 {
+    margin-left: 26px;
+}
+
+.PopPlaces .judul {
+    text-align: center;
+    width: 550px;
+    transform: translate(88%, 0%);
+    margin-bottom: 30px;
+}
+
+.PopPlaces .judul h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    color: #040e27;
+    padding: 9px;
+}   
+
+.PopPlaces .judul h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7a838b;
+}
+
+.PopGalleryPlaces {
+    width: 1300px;
+    margin-left: 175px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.PopGalleryPlaces .kotak {
+    width: 362px;
+    height: 335px;
+    background: whitesmoke;
+    border-radius: 7px;
+    float: left;
+    margin: 15px;
+    transition: all 0.2s ease;
+}
+
+.PopGalleryPlaces .kotak:hover {
+    -webkit-box-shadow: 0px 0px 10px #524c4c;
+}
+
+.PopGalleryPlaces .foto img {
+    width: 362px;
+    height: 204px;
+    float: left;
+    margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.PopGalleryPlaces .foto .harga {
+    position: absolute;
+    background: #1ec6b6;
+    margin: 20px;
+    padding: 9px 25px;
+    border-radius: 30px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.PopGalleryPlaces .kotak:hover .harga {
+    background: #FF4A52;
+}
+
+.PopGalleryPlaces .judulBawah {
+    float: left;
+    width: 100%;
+}
+
+.PopGalleryPlaces .judulBawah h1 {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: black;
+    transition: all 0.2s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PopGalleryPlaces .kotak:hover .judulBawah h1 {
+    color: #FF4A52;
+}
+
+.PopGalleryPlaces .judulBawah p {
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7a838b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PopGalleryPlaces .rating {
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+.PopGalleryPlaces .rating p {
+    float: left;
+    color: gold;
+    width: 90px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.PopGalleryPlaces .rating h4 {
+    float: left;
+    padding-top: 1px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #7a838b;
+    font-weight: 600;
+}
+
+.PopGalleryPlaces .durasi {
+    float: right;
+    width: 70px;
+    margin-right: 10px;
+    padding-top: 1px;
+}
+
+.PopGalleryPlaces .durasi img {
+    width: 15px;
+    height: auto;
+    float: left;
+    padding: 2px;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.PopGalleryPlaces .durasi p {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #7a838b;
+    font-weight: 600;
+}
+
+.PopPlaces .MorePlacesButton {
+    float: left;
+    width: 700px;
+    height: 100px;
+    padding-top: 70px;
+    padding-left: 44%;
+}
+
+.PopPlaces .MorePlacesButton a {
+    background: #FF4A52;
+    padding: 13px 39px;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.PopPlaces .MorePlacesButton a:hover {
+    background: #1ec6b6;
+}
+
+
+.videoPlay {
+    float: left;
+    width: 100%;
+    height: 660px;
+}
+
+.videoPlay img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+}
+
+.videoPlay .tulisan {
+    margin-top: -450px;
+    margin-left: 475px;
+}
+
+.videoPlay .tulisan p {
+    color: white;
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 100px;
+}
+
+.videoPlay .video a i {
+    font-size: 26px;
+    text-align: center;
+}
+
+.videoPlay .video .fa{
+    color: white;
+    background: #1ec6b6;
+    padding: 40px;
+    margin-top: 25px;
+    margin-left: 198px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.videoPlay .video .fa:hover{
+    background: #FF4A52;
+}
+
+
+.travelGuide {
+    float: left;
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 150px;
+    background: #f0dee1;
+}
+
+.travelGuide .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+
+.travelGuide .container .kolom {
+    position: relative;
+    width: 100%;
+    max-width: 30%;
+    flex: 0 0 31%;
+    text-align: center;
+    padding: 0 18px;
+}
+
+.kolom .logo {
+    margin-top: 15px;
+}
+
+.kolom h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-family: "Rubik",sans-serif;
+    font-weight: 600;
+}
+
+.kolom p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 8px;
+    font-family: "Rubik",sans-serif;
+    color: #7a838b;
+}
+
+
+
+.review {
+    background: #d4a8ae85;
+    padding: 130px 0px 125px 0px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.review .container .center {
+    display: block;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+
+.text .letak {
+    width: 100px;
+    position: relative;
+    max-width: 50%;
+    flex: 50%;
+}
+
+
+.text .letak .foto {
+    width: 100px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.letak .foto img {
+    border-radius: 50%;
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-left: 11px;
+}
+
+.text h3 {
+    font-size: 15px;
+    color: #524c4c;
+    text-align: center;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+}
+
+.text p {
+    font-size: 18px;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+}
+
+.center .titik {
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.titik .buletan {
+    background: #524c4c;
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 40px;
+    transition: all 0.2s ease;
+}
+
+.titik .buletan:hover {
+    background: #FF4A52;
+}
+
+
+.recentTrip {
+    float: left;
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 150px;
+    background: #f0dee1;
+}
+
+.recentTrip .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
+
+.recentTrip .judulRecent {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 1300px;
+}
+
+.recentTrip .judulRecent h1 {
+    font-size: 38px;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+}
+
+.container .kolom {
+    position: relative;
+    width: 100%;
+    max-width: 29%;
+    flex: 0 0 31%;
+    text-align: left;
+    padding: 0 28px;
+    cursor: pointer;
+}
+
+.kolom .foto {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.kolom .foto img {
+    width: 375px;
+    height: 225px;
+    border-radius: 7px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.recentTrip .kolom h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+    color: #7a838b;
+    padding-left: 2px;
+}
+
+.recentTrip .kolom p {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-family: "Rubik",sans-serif;
+    color: #000000;
+    text-align: left;
+    padding-left: 2px;
+    max-width: 100%;
+    transition: all 0.2s ease;
+}
+
+.recentTrip .kolom:hover p {
+    color: #FF4A52;
+}
+
+
+footer {
+    background: #d2aacb;
+    font-family: sans-serif;
+    width: 100%;
+    float: left;
+}
+
+footer .bagianAtas {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    justify-content: center;
+}
+
+
+.bagianAtas .kolom1 {
+    position: relative;
+    padding-right: 10px;
+    max-width: 24%;
+    flex: 24%;
+    width: 100%;
+}
+
+.kolom1 img {
+    width: 240px;
+    height: 240px;
+    margin-top: -98px;
+    margin-bottom: -60px;
+    margin-left: -48px;
+    cursor: pointer;
+}
+
+.kolom1 ul li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+
+.bagianAtas h3 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.bagianAtas p {
+    color: black;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.bagianAtas a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.bagianAtas a:hover {
+    color: #FF4A52;
+}
+
+.bagianAtas ul li {
+    list-style: none;
+}
+
+
+.kolom2 {
+    width: 100%;
+    max-width: 15%;
+    flex: 15%;
+}
+
+.kolom3 {
+    width: 100%;
+    max-width: 24%;
+    flex: 24%;
+}
+
+.kolom3 ul li {
+    float: left;
+    width: 50%;
+}
+
+.kolom4 {
+    width: 100%;
+    max-width: 20%;
+    flex: 20%;
+}
+
+.kolom4 .fotoInstagram {
+    float: left;
+}
+
+.kolom4 .fotoInstagram img {
+    border-radius: 8%;
+    margin-right: 7px;
+    width: 75px;
+    height: 75px;
+}
+
+
+.bagianBawah .border {
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.bagianBawah p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.bagianBawah a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #FF4A52;
+}
+
+
+
+
+
+/* Contact */
+article .blogContact {
+    background: #eec9cf;
+    width: 100%;
+    padding: 10px;
+}
+
+.blogContact .container {
+    max-width: 1400px;
+}
+
+article .container .maps {
+    margin: 72px 90px;
+    background: #eec9cf;
+}
+
+article .container .maps iframe {
+    height: 600px;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.bagianTulisan {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Rubik", sans-serif;
+    margin: 0px 90px;
+    margin-bottom: 90px;
+}
+
+.bagianTulisan h2 {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.bagianTulisan .tulisanKiri {
+    max-width: 65%;
+    flex: 65%;
+}
+
+
+.tulisanKiri form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    background: none;
+}
+
+.tulisanKiri .inputan textarea {
+    width: 95%;
+    height: 190px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: inherit;
+    border: 1px solid #cecfd0;
+    color: #cecfd0;
+    resize: vertical;
+}
+
+.tulisanKiri .inputan .name {
+    width: 40%;
+    flex: 40%;
+    margin-bottom: 25px;
+}
+
+.tulisanKiri .inputan .name input {
+    width: 90%;
+}
+
+.tulisanKiri .inputan .email {
+    width: 40%;
+    flex: 40%;
+    margin-bottom: 25px;
+}
+
+.tulisanKiri .inputan .email input {
+    width: 90%;
+}
+
+.tulisanKiri .inputan .subject {
+    width: 100;
+    flex: 100%;
+    margin-bottom: 35px;
+}
+
+.tulisanKiri .inputan .subject input {
+    width: 95%;
+}
+
+.tulisanKiri .inputan input {
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #cecfd0;
+    color: #cecfd0;
+}
+
+.tulisanKiri button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    background: #1ec6b6;
+    color: white;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tulisanKiri button:hover {
+    background: #FF4A52;
+    color: white;
+}
+
+
+
+.bagianTulisan .tulisanKanan {
+    width: 30%;
+    flex: 30%;
+}
+
+.tulisanKanan .margin {
+    margin-left: 120px;
+}
+
+.tulisanKanan .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.contactInfo i {
+    font-size: 35px;
+    color: #818385;
+    margin-right: 18px;
+}
+
+.contactInfo p {
+    font-size: 14px;
+    margin-left: 53px;
+    margin-top: -6px;
+    color: #707273;
+}
+
+.contactInfo h3 {
+    color: #524c4c;
+}
+
+
+
+
+
+/*Blog*/
+.blogAtas img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(60%);
+    margin-top: 90px;
+    margin-bottom: -4px;
+}
+
+.blogAtas .textFotonya {
+    position: absolute;
+    color: whitesmoke;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blogAtas .textFotonya h1 {
+    font-size: 70px;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 500;
+}
+
+.blogAtas .textFotonya h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.blogIsi {
+    width: 100%;
+    float: left;
+    background: #eec9cf;
+}
+
+.blogIsi .container {
+    width: 100%;
+    max-width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 100px;
+}
+
+
+.isiKiri {
+    flex: 65%;
+    width: 65%;
+}
+
+.kotakKonten {
+    background: #e3bdc3;
+    width: 94.7%;
+    margin-bottom: 55px;
+    padding-bottom: 35px;
+}
+
+.kotakKonten img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.kotakKonten .tanggal {
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    width: 50px;
+    font-family: "Rubik",sans-serif;
+    background: #FF4A52;
+    color: white;
+    margin-top: -110px;
+    margin-left: 50px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.kotakKonten .tanggal:hover {
+    background: #1ec6b6;
+}
+.kotakTulisan {
+    margin-left: 50px;
+    width: 80%;
+}
+
+.kotakTulisan a {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Rubik",sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.kotakTulisan a:hover {
+    color: #FF4A52;
+}
+
+.kotakTulisan p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #545454;
+    font-family: "Rubik",sans-serif;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.kotakTulisan .kategori {
+    float: left;
+    width: 125px;
+    margin-right: 10px;
+    padding-right: 0px;
+    border-right: 1px solid black;
+}
+
+.kotakTulisan .komen {
+    width: 250px;
+}
+
+.kotakTulisan h3 {
+    font-size: 14px;
+    font-family: "Rubik",sans-serif;
+    color: #545454;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.kotakTulisan h3:hover i {
+    color: #FF4A52;
+}
+
+.kotakTulisan h3:hover {
+    color: #FF4A52;
+}
+
+.kotakTulisan i {
+    float: left;
+    margin-right: 10px;
+    margin-top: 0.5px;
+    padding: 0px;
+    font-size: 14px;
+    color: #7a838b;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+.isiKiri .pagination {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-left: -38px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    background: #f0dee1;
+    border: 1px solid #707273;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pagination a:hover {
+    color: #FF4A52;
+}
+
+
+
+
+.isiKanan {
+    max-width: 30%;
+    flex: 30%;
+}
+
+.kotakSearch {
+    padding: 30px;
+    background: #e3bdc3;
+    margin-bottom: 20px;
+}
+
+.kotakSearch .SearchKeyword {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kotakSearch .SearchKeyword input {
+    border: none;
+    max-width: 70%;
+    flex: 70%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    background: white;
+}
+
+.kotakSearch .SearchKeyword i {
+    background: white;
+    color: #cecfd0;
+    padding: 17px 30px 0px 22px;
+    cursor: pointer;
+}
+
+.kotakSearch .tombolSearch input {
+    background: #1ec6b6;
+    border: none;
+    color: white;
+    font-family: "Rubik",sans-serif;
+    margin-top: 10px;
+    width: 99%;
+    height: 50px;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.kotakSearch .tombolSearch input:hover {
+    background: #FF4A52;
+    color: white;
+}
+
+
+
+.kotakCat {
+    padding: 30px;
+    background: #e3bdc3;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.kotakCat h2 {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.kotakCat p {
+    font-size: 14px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #545454;
+    color: #545454;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.kotakCat p:hover {
+    color: #FF4A52;
+}
+
+.kotakCat h3 {
+    font-size: 14px;
+    padding: 15px 0px;
+    color: #545454;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.kotakCat h3:hover {
+    color: #FF4A52;
+}
+
+
+
+.kotakRecent {
+    padding: 30px;
+    background: #e3bdc3;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.kotakRecent h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #545454;
+}
+
+.kotakRecent .bagianPost {
+    display: flex;
+}
+
+.kotakRecent .bagianPost img {
+    margin-right: 15px;
+    margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.bagianPost .tulisan {
+    margin-top: 10px;
+}
+
+.bagianPost .tulisan h3 {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+} 
+
+.bagianPost .tulisan h3:hover {
+    color: #FF4A52;
+}
+
+.bagianPost .tulisan p {
+    font-size: 14px;
+    color: #545454;
+}
+
+
+
+.kotakTag {
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #e3bdc3;
+    font-family: "Rubik", sans-serif;
+    display: inline-block;
+}
+
+.kotakTag h2 {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.kotakTag p {
+    color: #000;
+    float: left;
+    padding: 8px 20px;
+    border: 1px solid #545454;
+    border-radius: 3px;
+    margin-right: 5px;
+    background: #e3bdc3;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+.kotakTag p:hover {
+    color: white;
+    background: #FF4A52;
+    border: 1px solid #FF4A52;
+}
+
+
+
+.kotakFeeds {
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #e3bdc3;
+}
+
+.kotakFeeds h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.kotakFeeds img {
+    width: 30%;
+    padding-right: 7px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.kotakNews {
+    padding: 30px;
+    background: #e3bdc3;
+    font-family: "Rubik", sans-serif;
+}
+
+.kotakNews h2 {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.kotakNews input {
+    width: 96%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid #aab1b7;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.kotakNews button {
+    width: 100%;
+    height: 50px;
+    background: #1ec6b6;
+    border: none;
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.kotakNews button:hover {
+    background: #FF4A52;
+}
